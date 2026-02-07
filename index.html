@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Neha ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+    animation: fadeIn 2s ease;
+}
+
+h1 {
+    color: #ff4d6d;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#yes {
+    background: #ff4d6d;
+    color: white;
+}
+
+#no {
+    background: #ddd;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Music: Jungkook - Still With You -->
+<iframe width="0" height="0"
+src="https://www.youtube.com/embed/bV8fo5FzW6U?autoplay=1&loop=1&playlist=bV8fo5FzW6U"
+allow="autoplay">
+</iframe>
+
+<div class="container">
+    <h1>Hey Neha Shrivastav ❤️</h1>
+    <p>I’ve been holding this in my heart for a long time…</p>
+
+    <h2>Will you marry me? 💍</h2>
+    <p>You’re not just my love, you’re my forever.</p>
+
+    <div class="buttons">
+        <button id="yes" onclick="yesClick()">Yes 🥹❤️</button>
+        <button id="no" onmouseover="moveNo()">No 🙄</button>
+    </div>
+</div>
+
+<script>
+function yesClick() {
+    document.querySelector(".container").innerHTML = `
+        <h1>She Said YES 😭❤️</h1>
+        <p>
+        Neha, you just made my world complete.<br><br>
+        I promise to love you, choose you, and stand by you —
+        in every lifetime, in every universe 💕<br><br>
+        Forever yours 💍
+        </p>
+    `;
+}
+
+function moveNo() {
+    const noBtn = document.getElementById("no");
+    noBtn.style.position = "absolute";
+    noBtn.style.left = Math.random() * 70 + "%";
+    noBtn.style.top = Math.random() * 70 + "%";
+}
+</script>
+
+</body>
+</html>
